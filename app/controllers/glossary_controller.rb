@@ -188,8 +188,6 @@ class GlossaryController < ApplicationController
       @glossary_style.groupby != GlossaryStyle::GroupByCategory
     when 'rubi'
       (param_visible?(prmname) and !@is_index)
-    when 'abbr_whole'
-      (param_visible?(prmname) and !@is_index)
     else
       param_visible?(prmname)
     end
@@ -315,7 +313,7 @@ class GlossaryController < ApplicationController
   def query_search_index(ch, type, queries, symbols)
     return	unless (ch and !ch.empty?)
     charset = get_search_index_charset(ch, type)
-    searchprms = [:name, :abbr_whole, :rubi]
+    searchprms = [:name, :rubi]
     searchprms << :name_en	if (type)
     cnt = 0
     charset.each {|tch|

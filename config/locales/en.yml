@@ -13,7 +13,6 @@ en:
     category: Category
     description: Description
     rubi: Ruby
-    abbr_whole: Whole word for Abbreviation
   label_updater: Updater
   label_term_plural: Glossary
 

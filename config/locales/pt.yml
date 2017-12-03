@@ -13,7 +13,6 @@ pt:
     category: Categoria
     description: Descrição
     rubi: Ruby
-    abbr_whole: Palavra completa correspondente à abreviatura
   label_updater: Actualizador
   label_term_plural: Glossário
 

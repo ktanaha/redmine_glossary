@@ -11,14 +11,14 @@ class CreateGlossaryStyles < ActiveRecord::Migration
     end
 
     add_column :terms, :rubi, :string, :default => ''
-    add_column :terms, :abbr_whole, :string, :default => ''
+    add_column :terms, :string, :default => ''
 
   end
 
 
   def self.down
     drop_table :glossary_styles
-    remove_column :terms, :abbr_whole
+    remove_column :terms
     remove_column :terms, :rubi
   end
 end

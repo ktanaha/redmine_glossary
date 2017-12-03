@@ -20,7 +20,7 @@ class Term < ActiveRecord::Base
                   :url => Proc.new {|o| {:controller => 'glossary', :action => 'show', :id => o.project, :term_id => o.id} }
 
   attr_accessible :project_id, :category_id, :author, :name, :name_en, :description,
-                  :rubi, :abbr_whole
+                  :rubi
   
   def author
     author_id ? User.find_by_id(author_id) : nil
@@ -112,35 +112,35 @@ class Term < ActiveRecord::Base
   end
 
   def self.default_show_params
-    ['name_en', 'rubi', 'abbr_whole', 'project', 'category']
+    ['name_en', 'rubi', 'project', 'category']
   end
 
   def self.default_searched_params
-    ['name', 'name_en', 'abbr_whole', 'description']
+    ['name', 'name_en', 'description']
   end
 
   def self.default_sort_params
-    ['id', 'name', 'name_en', 'abbr_whole', 'project', 'category',
+    ['id', 'name', 'name_en', 'project', 'category',
      'datetime']
   end
 
   def self.hidable_params
-    ['name_en', 'rubi', 'abbr_whole']
+    ['name_en', 'rubi']
   end
 
   def self.setting_params
-    ['name_en', 'rubi', 'abbr_whole']
+    ['name_en', 'rubi']
   end
 
   def self.export_params
     ['id','project',
-     'name', 'name_en', 'rubi', 'abbr_whole', 'category',
+     'name', 'name_en', 'rubi', 'category',
      'author',  'updater', 'created_on', 'updated_on',
      'description']
   end
 
   def self.import_params
-    ['name', 'name_en', 'rubi', 'abbr_whole', 'category',
+    ['name', 'name_en', 'rubi', 'category',
      'description']
   end
 

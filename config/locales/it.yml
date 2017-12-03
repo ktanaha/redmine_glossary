@@ -13,7 +13,6 @@ it:
     category: Categoria
     description: Descrizione
     rubi: Ruby
-    abbr_whole: "Parola intera per l'abbreviazione"
   label_updater: Aggiornamento
   label_term_plural: Glossari
 

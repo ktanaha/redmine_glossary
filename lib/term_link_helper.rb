@@ -15,9 +15,6 @@ module ActionView
       def term_link(term)
         str = link_to(term.name, :controller => 'glossary', :action => 'show', :project_id => term.project,
                       :id => term.id)
-        unless (term.abbr_whole.empty?)
-          str = content_tag(:abbr, str, :title=>term.abbr_whole)
-        end
         unless (term.rubi.empty?)
           str = content_tag(:ruby) {
             tstr = content_tag(:rb, str)
