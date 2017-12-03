@@ -11,8 +11,6 @@ pt:
     name: Termo
     name_en: Inglês
     category: Categoria
-    datatype: "Tipo de dados a usar no código"
-    codename: "Abreviatura a usar no código"
     description: Descrição
     rubi: Ruby
     abbr_whole: Palavra completa correspondente à abreviatura

@@ -16,8 +16,6 @@ class CreateTerms < ActiveRecord::Migration
       t.column :updater_id, :integer
       t.column :name, :string, :default => '', :null => false
       t.column :name_en, :string, :default => ''
-      t.column :datatype, :string, :default => ''
-      t.column :codename, :string, :default => ''
       t.column :description, :text
       t.column :created_on, :timestamp
       t.column :updated_on, :timestamp

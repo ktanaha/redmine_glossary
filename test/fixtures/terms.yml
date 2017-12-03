@@ -7,7 +7,6 @@ one:
   updater_id: 
   name: 
   name_en: 
-  codename: 
   description: 
   created_on: 
   updated_on: 2010-12-13 21:25:16
@@ -19,7 +18,6 @@ two:
   updater_id: 
   name: 
   name_en: 
-  codename: 
   description: 
   created_on: 
   updated_on: 2010-12-13 21:25:16

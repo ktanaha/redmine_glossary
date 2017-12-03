@@ -19,7 +19,7 @@ class Term < ActiveRecord::Base
                   :type => 'terms',
                   :url => Proc.new {|o| {:controller => 'glossary', :action => 'show', :id => o.project, :term_id => o.id} }
 
-  attr_accessible :project_id, :category_id, :author, :name, :name_en, :datatype, :codename, :description,
+  attr_accessible :project_id, :category_id, :author, :name, :name_en, :description,
                   :rubi, :abbr_whole
   
   def author
@@ -112,38 +112,36 @@ class Term < ActiveRecord::Base
   end
 
   def self.default_show_params
-    ['name_en', 'rubi', 'abbr_whole', 'datatype', 'codename', 'project', 'category']
+    ['name_en', 'rubi', 'abbr_whole', 'project', 'category']
   end
 
   def self.default_searched_params
-    ['name', 'name_en', 'abbr_whole', 'datatype', 'codename', 'description']
+    ['name', 'name_en', 'abbr_whole', 'description']
   end
 
   def self.default_sort_params
-    ['id', 'name', 'name_en', 'abbr_whole', 'datatype', 'codename', 'project', 'category',
+    ['id', 'name', 'name_en', 'abbr_whole', 'project', 'category',
      'datetime']
   end
 
   def self.hidable_params
-    ['name_en', 'rubi', 'abbr_whole', 'datatype', 'codename']
+    ['name_en', 'rubi', 'abbr_whole']
   end
 
   def self.setting_params
-    ['name_en', 'rubi', 'abbr_whole', 'datatype', 'codename']
+    ['name_en', 'rubi', 'abbr_whole']
   end
 
   def self.export_params
     ['id','project',
-     'name', 'name_en', 'rubi', 'abbr_whole', 'category', 'datatype', 'codename',
+     'name', 'name_en', 'rubi', 'abbr_whole', 'category',
      'author',  'updater', 'created_on', 'updated_on',
      'description']
   end
 
   def self.import_params
-    ['name', 'name_en', 'rubi', 'abbr_whole', 'category', 'datatype', 'codename',
+    ['name', 'name_en', 'rubi', 'abbr_whole', 'category',
      'description']
   end
-                  
-  
-  
+
 end

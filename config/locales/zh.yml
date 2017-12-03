@@ -11,8 +11,6 @@ zh:
     name: 术语名称
     name_en: 术语英文拼写
     category: 分类
-    datatype: "编码数据类型"
-    codename: "术语缩写"
     description: 术语说明
     rubi: Ruby
     abbr_whole: 全称

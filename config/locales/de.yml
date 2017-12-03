@@ -13,8 +13,6 @@ de:
     name: Begriff
     name_en: Englisch
     category: Kategorie
-    datatype: "Datentyp im Programmcode"
-    codename: "AbkÃ¼rzung im Programmcode"
     description: Beschreibung
     rubi: Ruby
     abbr_whole: "Ausgeschriebener Begriff (bei AbkÃ¼rzungen)"

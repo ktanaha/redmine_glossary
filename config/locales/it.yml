@@ -11,8 +11,6 @@ it:
     name: Termine
     name_en: Inglese
     category: Categoria
-    datatype: "Tipo di dato in programmazione"
-    codename: "Abbreviazione per programmazione"
     description: Descrizione
     rubi: Ruby
     abbr_whole: "Parola intera per l'abbreviazione"

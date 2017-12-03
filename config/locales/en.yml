@@ -11,8 +11,6 @@ en:
     name: Term
     name_en: English
     category: Category
-    datatype: "Data type for coding"
-    codename: "Abbreviation for coding"
     description: Description
     rubi: Ruby
     abbr_whole: Whole word for Abbreviation

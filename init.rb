@@ -21,8 +21,6 @@ Redmine::Plugin.register :redmine_glossary do
 
   settings :default => {
     'hide_item_term_en' => false,
-    'hide_item_codename' => false,
-    'hide_item_datatype' => false,
     'hide_item_rubi' => false,
     'hide_item_abbr_whole' => false,
   }, :partial => 'settings/glossary_settings'

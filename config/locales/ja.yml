@@ -10,8 +10,6 @@ ja:
     name: 用語
     name_en: 英語名
     category: カテゴリ
-    datatype: データ型
-    codename: "コーディング用名称例"
     description: 説明
     rubi: ふりがな
     abbr_whole: 略語の展開名称
